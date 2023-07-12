@@ -1,0 +1,21 @@
+{
+    "name": "gilt-t_farms",
+    "version": "1.0.0",
+    "description": "",
+    "main": "Server/server.js",
+    "scripts": {
+        "start": "node Server/server.js --ignore client",
+        "develop": "concurrently \"cd Server && npm run watch\" \"cd client && npm start\"",
+        "install": "cd Server && npm i && cd ../client && npm i",
+        "seed": "cd Server && npm run seed",
+        "build": "cd client && npm run build"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^5.3.0"
+    },
+    "engines": {
+        "node": "16.x.x"
+      }
+}
