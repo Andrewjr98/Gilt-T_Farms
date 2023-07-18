@@ -1,5 +1,5 @@
 const { Schema, model } = require("mongoose");
-const dateFormat = require("../Utils/dateFormat");
+const dateFormat = require("../utils/dateFormat");
 
 const postSchema = new Schema({
   postAuthor: {
