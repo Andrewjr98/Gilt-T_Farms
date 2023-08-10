@@ -34,9 +34,16 @@ const Header = () => {
                             </Link>
                         </Button>
                     </Menu.Item>
+                    <Menu.Item>
+                        <Button>
+                            <Link to="/signup">Create Account</Link>
+                        </Button>
+                    </Menu.Item>
                     </>
                 )}
             </Menu.Menu>
         </Menu>
     );
 };
+
+export default Header;
